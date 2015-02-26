@@ -8,13 +8,15 @@ int days =0;
     text("day:"+days,5,10);
     
   }
-  void draw(){ 
+  void draw(){
     
   }
   void mouseReleased() {
-    days = days + 30;
-    env.passDay(days);
-    if (days ==30)
-    background(#CDCCCD);
-    text("day:"+days,5,10);
+    if(days==0){
+      days = days + 30;
+      env.passDay(days);
+      if (days ==30)
+      background(#CDCCCD);
+      text("day:"+days,5,10);
+    }
   }

@@ -12,7 +12,7 @@ class Environment {
   void passDay(int d) {
     for (int e=0; e< days; ++e) {
       for (int m=0; m< pop.size (); m++) {
-        pop.get(m).passDay(); //Index out of bound exception, index 15 size 15? not sure how to fix this or why its an error 
+        pop.get(m).passDay(); 
       
         if (pop.get(m).getHealth() > 100) {
           pop.get(m).setHealth(100);

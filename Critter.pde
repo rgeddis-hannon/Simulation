@@ -29,7 +29,7 @@ abstract class Critter {
   }
 
   String toString() {
-    return "Age: " + age + " - Health: " + health + " - Luck: " + luck;
+    return "Age: " + age + " --- Health: " + health + " --- Luck: " + luck;
   }
 
   boolean chance(int p) {
